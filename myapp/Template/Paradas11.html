@@ -1,0 +1,73 @@
+{% extends 'basee.html' %}
+{% load static %}
+{% block content %}
+
+      <div class="titulo">
+
+        <img class="imagen_Ti"  src="{% static '/images/logo.interbus.png' %}" alt="Autobús"><h1>Parada Av.Quiñones-Cerro Del Baile</h1></div>
+        
+         
+         </div>
+         <div class="tabla">
+         <div class="first">
+          <img class="imagen" src="{% static '/images/Bus-logo.png' %}" alt="Autobús"a href="" ><p><strong>Linea L7</strong><br>
+            Circular (Estación Ff.Cc. - Polígonos - Estación Ff.Cc.)</p>
+         </div>
+  
+         <div class=" texto">
+          <p> <b> Linea 7 de autobús Linea Horarios y Paradas (Actualizado) </b><br>
+          La línea 7de autobús (Av. Colmenar Viejo-Ntra.Sra.carmen)<br> tiene 33 paradas desde Av. Sierra - Est. Alcobendas S. Seb. Reyes
+           hasta Av. Sierra - Est. Alcobendas S. Seb. Reyes</p></div>
+       
+       
+       <div class="horarios">
+        <b>Horarios de L7 de autobús
+        La ruta de autobús L7 opera todos los días. </b> <br> 
+        El horario regular es: 07:30 - 23:10 <br>
+        Día	Horas operativas	Frecuencia (min) <br>
+        lun.	06:30 - 23:45	15 - 30 <br>
+        mar.	06:30 - 23:45	15 - 30 <br>
+        mié.	07:30 - 23:10	30 - 40 <br>
+        jue.	07:30 - 23:10	30 - 40 <br>
+        vie.	06:30 - 23:45	15 - 30 <br>
+        sáb.	07:00 - 23:00	30 <br>
+        dom.	07:30 - 23:10	30 - 40</div>
+        <img class="horarios"  src="{% static '/images/mapa.L7.png' %}" alt="bus">
+        </div>
+        <div class="tabla">
+  
+         <div class="first">
+          <img class="imagen" src="{% static '/images/Bus-logo.png' %}" alt="Autobús" > <a href="{% url 'reserva' %}" ><p><strong>Linea154C </strong> </a><br>
+            Madrid (Plaza de Castilla) - S. S. de los Reyes (Avda. de los Quiñones) <br>
+            
+            
+          </div>
+          <div class=" texto">
+            <p> <b>  Interurbanos 154C autobús Linea Horarios y Paradas (Actualizado)</b> <br>
+              La línea 154C de autobús (Intercambiador De Plaza De Castilla (Nivel -3, Isla 1)) <br> tiene 23 paradas desde Av. Quiñones - Cerro Del Baile hasta Intercambiador De Plaza De Castilla.</p></div>
+         
+         <div class="horarios">
+          <b>Horarios de 154C de autobús
+          La ruta de autobús 154C opera todos los días. </b> <br> 
+          El horario regular es: 06:05 - 23:05 <br>
+          Día	Horas operativas	Frecuencia (min) <br>
+          lun.	06:05 - 23:05	15 - 30 <br>
+          mar.	06:05 - 23:05	15 - 30 <br>
+          mié.	06:05 - 23:05	15 - 30 <br>
+          jue.	06:05 - 23:05	15 - 30 <br>
+          vie.	06:05 - 23:05	15 - 30<br>
+          sáb.	06:10 - 23:20	30 <br>
+          dom.	06:10 - 23:20	30 - 40</div>
+          <img class="horarios"  src="{% static '/images/mapa.154C.png' %}" alt="bus">
+          </div>
+         
+         
+  
+      
+          
+        
+        
+       
+        
+        
+  {% endblock %}

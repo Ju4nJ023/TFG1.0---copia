@@ -1,0 +1,60 @@
+{% extends 'basee.html' %}
+
+{% block content %}
+
+
+  <div class="row justify-content-center">
+    
+    <div class="col-md-4 ">
+      <h1 class="text-center">Paradas Cercanas</h1>
+      
+      <div class="list-group">
+        <a href="Paradas" class="list-group-item list-group-item-action">Parada Calle Alonso Zamora</a>
+        <a href="Paradas2" class="list-group-item list-group-item-action">Parada Calle Jose Hierro</a>
+        <a href="Paradas3" class="list-group-item list-group-item-action">Parada Salvador Madariaga-C.C.Alegra</a>
+        <a href="Paradas4" class="list-group-item list-group-item-action">Parada Ctra.Antigua Hacia  Burgos-C.C.Alegra</a>
+        <a href="Paradas5" class="list-group-item list-group-item-action">Parada Ctra.Antigua De Burgos-C.C.Alegra</a>
+        <a href="Paradas6" class="list-group-item list-group-item-action">Parada Paseo de Europa</a>
+        <a href="Paradas7" class="list-group-item list-group-item-action">Parada José Hierro-Mercé Rododera</a>
+        <a href="Paradas8" class="list-group-item list-group-item-action">Parada Rosa Chacel-Francisco Ayala</a>
+        <a href="Paradas9" class="list-group-item list-group-item-action">Parada Alonso Z.Vicente-Rosa Chacel</a>
+        <a href="Paradas10" class="list-group-item list-group-item-action">Parada Alonso Z.Vicente-Clara Campoamor</a>
+        <a href="Paradas11" class="list-group-item list-group-item-action">Parada Av.Quiñones-Cerro Del Baile</a>
+        <a href="Paradas12" class="list-group-item list-group-item-action">Paradas José Hierro-María Moliner</a>
+        <a href="Paradas13" class="list-group-item list-group-item-action">Parada Calle de Maria Moliner</a>
+        <a href="Paradas14" class="list-group-item list-group-item-action">Parada Pza.Concha Espina-María Moliner</a>
+        <a href="Paradas15" class="list-group-item list-group-item-action">Parada Pza.Concha Espina-Francisco Ayala B</a>
+        
+        
+      </div>
+</div>
+<div class="col-md-8">
+<h1 class="text-center">Mapa</h1>
+{{ map|safe }}
+</div>
+</div>
+</div>
+
+{% endblock %}
+
+<script>
+
+var enlacesParada = document.querySelectorAll('.list-group-item.list-group-item-action');
+
+
+enlacesParada.forEach(function(enlace) {
+enlace.addEventListener('click', function(event) {
+event.preventDefault();  
+var paradaId = this.getAttribute('data-id');
+
+
+if (paradaId !== null && paradaId !== "") {
+    
+    var urlDestino = '/homePage/Paradas/' + paradaId + '/';
+
+    
+    window.location.href = urlDestino;
+}
+});
+});
+</script>

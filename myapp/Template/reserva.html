@@ -1,0 +1,38 @@
+
+{% extends 'basee.html' %}
+{% load static %}
+{% block content %}
+
+<title>Mostrar Asientos</title>
+    
+  
+    
+
+
+    <div class="titulo">
+    <h1>Selecciona un Asiento</h1>
+  </div>
+    
+  <div class="contenedores">
+    <form method="post" action="{% url 'reserva' %}">
+        
+        {% csrf_token %}
+        <ul id="asientos">
+          {% for asiento in asientos %}
+          <li class="asiento {% if asiento.disponible %}asiento-disponible{% else %}asiento-no-disponible{% endif %}">
+            Asiento {{ asiento.id }}
+            {% if asiento.disponible %}
+            <input type="hidden" name="numero_asiento" value="{{ asiento.id }}">
+            <button type="submit" name="reserva" value="{{ asiento.id }}">Reservar</button>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </form>
+      <img class="contenedores"  src="{% static '/images/bus.png' %}" alt="bus">
+    </div>
+    
+      
+    
+    {% endblock %}
+   

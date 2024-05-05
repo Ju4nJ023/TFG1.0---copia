@@ -1,0 +1,125 @@
+.first{
+       
+        
+        
+      display: flex;
+        width: 500px;
+        align-items: center;
+        
+       
+       
+       
+       
+        
+        
+
+}
+.tabla{
+        border: 10px solid #5e57e4;
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 520px;
+        height: 1050px;
+        background-color: #7ea7ff;
+       
+    
+        
+     
+        
+}
+.imagen{
+        width: 60px;
+        background: none;
+        display: flex;
+}
+p{
+        margin-top: 15px;
+        
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        cursor: auto;
+       
+      
+       
+        
+}
+
+.texto{
+        margin-top: 25px;
+        width: 500px;
+       
+       display: flex;
+        font: 1em sans-serif;
+        align-items: center;
+        background-color: #7ea7ff;
+        
+     
+        
+}
+
+       
+
+.titulo{
+        display:flex;
+        
+        align-items: center;
+        background: #172457;
+       font: 1em sans-serif;
+       color: antiquewhite;
+       height: 100px;
+      
+        
+}
+.imagen_Ti{
+        width: 75px;
+        border-style:solid #ffffff;
+
+       
+
+      
+      
+}
+body{
+        background: #cfc6c6;
+}
+.navbar-brand{
+        display: row;
+        
+
+
+}
+
+
+.horarios{
+       
+       
+        width: 500px;
+        display: block;
+        background-color: #615bb0;
+       
+        
+       
+       
+        
+}
+.asiento {
+        padding: 10px;
+        margin: 5px;
+        display: inline-block;
+    }
+    .asiento-disponible {
+        background-color: green;
+        color: white;
+    }
+    .asiento-no-disponible {
+        background-color: red;
+        color: white;
+    }
+    .contenedores {
+      width: 700px;
+        display: flex;
+        
+    }
+
+
